@@ -1,12 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { JsonPipe } from '@angular/common';
+
+import { InteractiveItalyModule } from '@daudr/interactive-italy'
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
       ],
+      imports: [InteractiveItalyModule]
     }).compileComponents();
   }));
 
@@ -16,16 +20,20 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'interactive-map'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('interactive-map');
-  });
-
-  it('should render title in a h1 tag', () => {
+  it('should not display regions if there aren\'t some selected', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to interactive-map!');
+    expect(compiled.querySelector('h3')).toBeFalsy();
+  });
+
+  it('should display regions if some are selected', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const json = new JsonPipe();
+    const component = fixture.componentInstance;
+    component.onChange(['Toscana', 'Lazio']);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h3')).toBeTruthy();
   });
 });

@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { InteractiveItalyModule } from '@daudr/interactive-italy';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    InteractiveItalyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

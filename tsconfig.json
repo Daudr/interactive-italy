@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@daudr/interactive-italy": [
+        "dist/daudr/interactive-italy"
+      ],
+      "@daudr/interactive-italy/*": [
+        "dist/daudr/interactive-italy/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

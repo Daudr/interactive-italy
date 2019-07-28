@@ -1,0 +1,17 @@
+svg {
+  path {
+    pointer-events: visible;
+    fill: none;
+    stroke: rgb(117, 32, 49);
+    transform: scale(0.7);
+
+    &.selected {
+      fill: rgb(117, 32, 49);
+      stroke: black;
+    }
+
+    &:hover {
+      fill: rgb(117, 32, 49);
+    }
+  }
+}

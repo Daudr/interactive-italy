@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'daudr-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: [ './app.component.scss' ]
 })
-export class AppComponent {
-  title = 'interactive-map';
+export class AppComponent  {
+  selectedRegions: string[] = [];
+
+  onChange(regions: string[]) {
+    this.selectedRegions = regions;
+  }
 }
