@@ -1,6 +1,6 @@
 {
   "name": "@daudr/interactive-map",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "description": "A simple interactive map for Angular",
   "author": "Michele Da Rin Fioretto",
