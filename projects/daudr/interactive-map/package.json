@@ -1,17 +1,17 @@
 {
-  "name": "@daudr/interactive-italy",
+  "name": "@daudr/interactive-map",
   "version": "1.0.0",
   "private": false,
-  "description": "A simple interactive map of Italy",
+  "description": "A simple interactive map for Angular",
   "author": "Michele Da Rin Fioretto",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Daudr/interactive-italy.git"
+    "url": "https://github.com/Daudr/interactive-map.git"
   },
   "bugs": {
-    "url": "https://github.com/Daudr/interactive-italy/issues"
+    "url": "https://github.com/Daudr/interactive-map/issues"
   },
-  "homepage": "https://github.com/Daudr/interactive-italy",
+  "homepage": "https://github.com/Daudr/interactive-map",
   "keywords": ["Angular", "Italy", "Interactive Map", "SVG"],
   "license": "MIT",
   "peerDependencies": {

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed, tick, fakeAsync } from '@angular/core/testing';
 
-import { InteractiveItalyComponent } from './interactive-italy.component';
+import { InteractiveItalyComponent } from './interactive-map.component';
 import { SelectedPipe } from './selected.pipe';
 import { By } from '@angular/platform-browser';
 

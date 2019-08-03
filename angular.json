@@ -120,33 +120,33 @@
         }
       }
     },
-    "@daudr/interactive-italy": {
+    "@daudr/interactive-map": {
       "projectType": "library",
-      "root": "projects/daudr/interactive-italy",
-      "sourceRoot": "projects/daudr/interactive-italy/src",
+      "root": "projects/daudr/interactive-map",
+      "sourceRoot": "projects/daudr/interactive-map/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/daudr/interactive-italy/tsconfig.lib.json",
-            "project": "projects/daudr/interactive-italy/ng-package.json"
+            "tsConfig": "projects/daudr/interactive-map/tsconfig.lib.json",
+            "project": "projects/daudr/interactive-map/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/daudr/interactive-italy/src/test.ts",
-            "tsConfig": "projects/daudr/interactive-italy/tsconfig.spec.json",
-            "karmaConfig": "projects/daudr/interactive-italy/karma.conf.js"
+            "main": "projects/daudr/interactive-map/src/test.ts",
+            "tsConfig": "projects/daudr/interactive-map/tsconfig.spec.json",
+            "karmaConfig": "projects/daudr/interactive-map/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/daudr/interactive-italy/tsconfig.lib.json",
-              "projects/daudr/interactive-italy/tsconfig.spec.json"
+              "projects/daudr/interactive-map/tsconfig.lib.json",
+              "projects/daudr/interactive-map/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

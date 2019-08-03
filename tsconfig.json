@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "@daudr/interactive-italy": [
-        "dist/daudr/interactive-italy"
+      "@daudr/interactive-map": [
+        "dist/daudr/interactive-map"
       ],
-      "@daudr/interactive-italy/*": [
-        "dist/daudr/interactive-italy/*"
+      "@daudr/interactive-map/*": [
+        "dist/daudr/interactive-map/*"
       ]
     }
   },
