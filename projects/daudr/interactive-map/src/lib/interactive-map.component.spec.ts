@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed, tick, fakeAsync } from '@angular/core/testing';
 
-import { InteractiveItalyComponent } from './interactive-italy.component';
+import { InteractiveMapComponent } from './interactive-map.component';
 import { SelectedPipe } from './selected.pipe';
 import { By } from '@angular/platform-browser';
 
 describe('MapComponent', () => {
-  let component: InteractiveItalyComponent;
-  let fixture: ComponentFixture<InteractiveItalyComponent>;
+  let component: InteractiveMapComponent;
+  let fixture: ComponentFixture<InteractiveMapComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InteractiveItalyComponent, SelectedPipe ]
+      declarations: [ InteractiveMapComponent, SelectedPipe ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InteractiveItalyComponent);
+    fixture = TestBed.createComponent(InteractiveMapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

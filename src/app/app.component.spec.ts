@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { JsonPipe } from '@angular/common';
 
-import { InteractiveItalyModule } from '@daudr/interactive-italy'
+import { InteractiveMapModule } from '@daudr/interactive-map';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,7 +10,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
       ],
-      imports: [InteractiveItalyModule]
+      imports: [InteractiveMapModule]
     }).compileComponents();
   }));
 

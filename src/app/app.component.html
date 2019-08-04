@@ -1,3 +1,11 @@
-<daudr-interactive-italy (regionsChange)="onChange($event)"></daudr-interactive-italy>
+<div class="map__italy">
+  <daudr-interactive-map (regionsChange)="onChange($event)"></daudr-interactive-map>
 
-<h3 *ngIf="selectedRegions.length > 0">You selected: {{ selectedRegions | json }}</h3>
+  <h3 *ngIf="selectedRegions.length > 0">You selected: {{ selectedRegions | json }}</h3>
+</div>
+
+<div class="map__usa">
+  <daudr-interactive-map [type]="usa" (regionsChange)="onChange($event, 'usa')"></daudr-interactive-map>
+
+  <h3 *ngIf="usaRegions.length > 0">You selected: {{ usaRegions | json }}</h3>
+</div>

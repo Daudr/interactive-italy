@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { InteractiveItalyModule } from '@daudr/interactive-italy';
+import { InteractiveMapModule } from '@daudr/interactive-map';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { InteractiveItalyModule } from '@daudr/interactive-italy';
   ],
   imports: [
     BrowserModule,
-    InteractiveItalyModule
+    InteractiveMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
